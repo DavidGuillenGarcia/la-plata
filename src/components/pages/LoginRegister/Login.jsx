@@ -10,7 +10,7 @@ export const Login = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [loginmessage, setLoginmessage] = useState(
-    "Introduce tu email y contraseña"
+    "Enter your email and password"
   );
 
   const handleLogin = (event) => {
@@ -19,17 +19,17 @@ export const Login = () => {
     const userRegistered = localStorage.getItem("userRegistered");
 
     if (!email || !password) {
-      setLoginmessage("Debes completar todos los campos");
+      setLoginmessage("You must complete all the fields");
       return;
     }
 
     if (!userRegistered || JSON.parse(userRegistered).email !== email) {
-      setLoginmessage("Usuario no registrado");
+      setLoginmessage("User not found");
       return;
     }
 
     if (JSON.parse(userRegistered).password !== password) {
-      setLoginmessage("Email o contraseña incorrectos");
+      setLoginmessage("Incorrect user or password");
       return;
     }
 
