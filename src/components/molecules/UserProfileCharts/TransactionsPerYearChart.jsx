@@ -35,7 +35,7 @@ export function TransactionsPerYearChart() {
         labels: Object.keys(transactionsPerYear),
         datasets: [
             {
-                label: 'Cantidad de transacciones',
+                label: 'Transaction quantity',
                 data: Object.values(transactionsPerYear),
                 backgroundColor: 'rgba(54, 162, 235, 0.6)',
                 borderRadius: 8,
@@ -51,7 +51,7 @@ export function TransactionsPerYearChart() {
             },
             title: {
                 display: true,
-                text: 'Transacciones por año',
+                text: 'Transactions per year',
                 font: { size: 18 },
             },
         },
