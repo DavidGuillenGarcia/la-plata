@@ -15,7 +15,7 @@ export const DashboardHeader = () => {
   return (
     <>
       <header className="dashboardHeaderContainer">
-        <img src="/src/assets/laplata.png" alt="" className="dashboardLogo" />
+        <img src="/laplata.png" alt="" className="dashboardLogo" />
         <nav className="dashboardNav">
           <Link to="/dashboard" className="dashboardHeaderLink">
             <img className="dashboardHeaderImg" src="/dashboard.svg" alt="" />
