@@ -13,19 +13,19 @@ export const Register = () => {
     const [repeatPassword, setRepeatPasword] = useState()
     const [email, setEmail] = useState()
 
-    const [registerAlert, setRegisterAlert] = useState("Completa el formulario de registro")
+    const [registerAlert, setRegisterAlert] = useState("Complete the register form")
 
     const handleRegister = (event) => {
         event.preventDefault()
 
         if (password !== repeatPassword) {
 
-            setRegisterAlert("Las contraseñas no coinciden")
+            setRegisterAlert("The password don't match")
             return
         }
 
         if (!name || !lastname || !password || !repeatPassword || !email) {
-            setRegisterAlert("Debe completar todos los campos")
+            setRegisterAlert("You need to complete all the required* fields")
             return
         }
 
